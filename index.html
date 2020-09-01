@@ -13,7 +13,7 @@
             margin: 0;
             padding: 0;
             color: #333;
-			background-color: #ecf5ff;
+            background-color: #ecf5ff;
         }
 
         p {
@@ -46,6 +46,7 @@
 
         }
 
+        /* Button */
         .button {
             display: inline-block;
             padding: 15px 25px;
@@ -71,7 +72,14 @@
             transform: translateY(4px);
         }
 
-        .userName {
+
+        .username {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .password {
             display: flex;
             justify-content: center;
             align-items: center;
@@ -85,8 +93,12 @@
         <div>
             <img src="images/maths.jpg" alt="HTML5 Icon" style="width:50%;height:50%;">
         </div>
-        <div class="userName">
+        <div class="username">
             <a>username:</a>
+            <textarea name="" id=""></textarea>
+        </div>
+        <div class="password">
+            <a>password:</a>
             <textarea name="" id=""></textarea>
         </div>
         <div>
