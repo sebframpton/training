@@ -47,6 +47,32 @@
         }
 
         /* Button */
+        .btn {
+            display: inline-block;
+            padding: 15px 25px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #666;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+
+        .btn:hover {
+            background-color: darkcyan;
+        }
+
+        .btn:active {
+            background-color: darkcyan;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
+
+
         .button {
             display: inline-block;
             padding: 15px 25px;
@@ -83,6 +109,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            padding: 1rem;
+
         }
     </style>
 </head>
@@ -102,7 +130,8 @@
             <textarea name="" id=""></textarea>
         </div>
         <div>
-            <button class="button" type="submit">Send</button>
+            <button class="btn" type="submit">Create a account</button>
+            <button class="button" type="submit">Log In</button>
         </div>
     </div>
 </body>
