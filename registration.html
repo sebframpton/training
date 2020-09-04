@@ -59,6 +59,7 @@
             border: none;
             border-radius: 15px;
             box-shadow: 0 9px #999;
+
         }
 
         .btn:hover {
@@ -97,44 +98,19 @@
             transform: translateY(4px);
         }
 
+
         .username {
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
         }
-
-        .email {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 1rem;
-        }
-
-
 
         .password {
             display: flex;
-            flex-direction: column;
             justify-content: center;
             align-items: center;
             padding: 1rem;
 
-        }
-
-        .re-Password {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 1rem;
-
-        }
-
-        .pageName {
-            background-color: rgba(47, 158, 47, 0.904);
-            font-weight: bold;
         }
     </style>
 </head>
@@ -142,28 +118,22 @@
 <body class="flex-container">
     <div>
         <p>Training</p>
-
-        <p class="pageName">Create a Account</p>
-
+        <div>
+            <img src="images/maths.jpg" alt="HTML5 Icon" style="width:50%;height:50%;">
+        </div>
+        <h1>User account created</h1>
+        <h2>Try signing in</h2>
         <div class="username">
-            <a>Username:</a>
+            <a>username:</a>
             <textarea name="" id=""></textarea>
         </div>
-        <div class="email">
-            <a>Email:</a>
-            <textarea name="" id=""></textarea>
-        </div>
-
         <div class="password">
-            <a>Password:</a>
-            <textarea name="" id=""></textarea>
-        </div>
-        <div class="re-Password">
-            <a>Re-Password:</a>
+            <a>password:</a>
             <textarea name="" id=""></textarea>
         </div>
         <div>
-            <a class="btn" type="submit" href="registration.html">Create a account</a>
+            <a class="btn" type="submit" href="account.html">Create a account</a>
+            <button class="button" type="submit">Log In</button>
         </div>
     </div>
 </body>
