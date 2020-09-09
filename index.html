@@ -13,13 +13,12 @@
             margin: 0;
             padding: 0;
             color: #333;
-            background-color: #ecf5ff;
+            /* background-color: #ecf5ff; */
         }
 
         p {
             letter-spacing: normal;
-            border: 2px solid red;
-            border-radius: 5px;
+
             margin-bottom: 5rem;
         }
 
@@ -32,10 +31,7 @@
 
         .flex-container {
             display: flex;
-            justify-content: center;
-            align-items: center;
             flex-direction: column;
-            text-align: center;
             padding: 2rem;
         }
 
@@ -112,10 +108,76 @@
             padding: 1rem;
 
         }
+
+        /* Navbar */
+        body {
+            margin: 0;
+        }
+
+        ul.topnav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        ul.topnav li {
+            float: left;
+        }
+
+        ul.topnav li a {
+            display: flex;
+            justify-content: flex-end;
+            color: black;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        ul.topnav li a:hover:not(.active) {
+            background-color: #111;
+        }
+
+        ul.topnav li a.active {
+            background-color: #4CAF50;
+        }
+
+        ul.topnav li.right {
+            float: left;
+        }
+
+        @media screen and (max-width: 600px) {
+
+            ul.topnav li.right,
+            ul.topnav li {
+                float: right;
+            }
+        }
+
+        .navbar {
+            display: flex;
+            color: blanchedalmond;
+        }
     </style>
 </head>
 
 <body class="flex-container">
+    <div class="navbar">
+        <ul class="topnav">
+            <li><a class="active" href="#home">Home</a></li>
+            <li><a href="#news">News</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li class="right"><a href="#about">About</a></li>
+        </ul>
+    </div>
+    <div style="padding:0 16px;">
+        <h2>Responsive Topnav Example</h2>
+        <p>This example use media queries to stack the topnav vertically when the screen size is 600px or less.</p>
+        <p>You will learn more about media queries and responsive web design later in our CSS Tutorial.</p>
+        <h4>Resize the browser window to see the effect.</h4>
+    </div>
+
     <div>
         <p>Training</p>
 
