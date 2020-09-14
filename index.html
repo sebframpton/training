@@ -57,31 +57,44 @@
             }
         }
 
+        /* Image */
+        .header-img {
+            display: flex;
+            justify-content: center;
+            margin-top: 5rem;
+        }
+
+
         /* Body */
         p {
             letter-spacing: normal;
-
             margin-bottom: 5rem;
         }
 
-        img {
-            margin-top: 5rem;
-            margin-left: 5rem;
-            padding: 5rem;
-            border-style: solid;
-            margin-bottom: 5rem;
-        }
+
 
         .flex-container {
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             padding: 2rem;
         }
 
         .flex-container>div {
             margin: 10px;
-            font-size: 30px;
 
+
+        }
+
+        .heading1 {
+            display: flex;
+
+            /* justify-content: flex-start; */
+        }
+
+        .heading2 {
+            display: flex;
+
+            /* justify-content: flex-end; */
         }
 
         /* Button */
@@ -135,20 +148,6 @@
             box-shadow: 0 5px #666;
             transform: translateY(4px);
         }
-
-
-        .username {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .password {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            padding: 1rem;
-        }
     </style>
 </head>
 
@@ -165,23 +164,26 @@
             <a class="button" type="submit" href="login.html">Log In</a>
         </div>
     </div>
-    <div class="">
+    <div class="header-img">
         <div>
-            <img src="images/maths.jpg" alt="HTML5 Icon" style="width:50%;height:50%;">
+            <img src="images/maths.jpg" alt="HTML5 Icon" width="1000" height="300">
         </div>
     </div>
-    <div class="flex-container">
-        <div style="padding-left:20px">
-            <h1>Training</h1>
-            <p>describe this page</p>
-            <p>Some content..</p>
-        </div>
-    </div>
-    <div class="flex-container">
-        <div style="padding-right:20px">
-            <h1>Training</h1>
-            <p>describe this page</p>
-            <p>Some content..</p>
+    <div class=" flex-container">
+        <div class="heading1">
+            <div style="padding-left:20px">
+                <h1>Training</h1>
+                <p>describe this page</p>
+                <p>Some content..</p>
+            </div>
+
+            <div class="heading2">
+                <div style="padding-right:20px">
+                    <h1>Training</h1>
+                    <p>describe this page</p>
+                    <p>Some content..</p>
+                </div>
+            </div>
         </div>
     </div>
 </body>
