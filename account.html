@@ -112,6 +112,31 @@
             transform: translateY(4px);
         }
 
+        .btn1 {
+            display: inline-block;
+            margin-top: 5rem;
+            padding: 15px 25px;
+            font-size: 24px;
+            cursor: pointer;
+            text-align: center;
+            text-decoration: none;
+            outline: none;
+            color: #fff;
+            background-color: #666;
+            border: none;
+            border-radius: 15px;
+            box-shadow: 0 9px #999;
+        }
+
+        .btn1:hover {
+            background-color: darkcyan;
+        }
+
+        .btn1:active {
+            background-color: darkcyan;
+            box-shadow: 0 5px #666;
+            transform: translateY(4px);
+        }
 
         .button {
             display: inline-block;
@@ -180,7 +205,7 @@
     </style>
 </head>
 
-<body class="flex-container">
+<body>
 
     <div class="header">
         <a href="#default" class="logo">SF</a>
@@ -193,31 +218,33 @@
             <a class="button" type="submit" href="login.html">Log In</a>
         </div>
     </div>
-    <div>
+    <div class="flex-container">
         <p>Training</p>
 
         <p class="pageName">Create a Account</p>
+    </div>
+    <div class="username">
+        <a>Username:</a>
+        <textarea name="" id=""></textarea>
+    </div>
+    <div class="email">
+        <a>Email:</a>
+        <textarea name="" id=""></textarea>
+    </div>
 
-        <div class="username">
-            <a>Username:</a>
-            <textarea name="" id=""></textarea>
-        </div>
-        <div class="email">
-            <a>Email:</a>
-            <textarea name="" id=""></textarea>
-        </div>
+    <div class="password">
+        <a>Password:</a>
+        <textarea name="" id=""></textarea>
+    </div>
+    <div class="re-Password">
+        <a>Re-Password:</a>
+        <textarea name="" id=""></textarea>
+        <a class="btn1" type="submit" href="registration.html">Create a account</a>
+    </div>
 
-        <div class="password">
-            <a>Password:</a>
-            <textarea name="" id=""></textarea>
-        </div>
-        <div class="re-Password">
-            <a>Re-Password:</a>
-            <textarea name="" id=""></textarea>
-        </div>
-        <div>
-            <a class="btn" type="submit" href="registration.html">Create a account</a>
-        </div>
+    <div>
+
+    </div>
     </div>
 </body>
 
