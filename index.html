@@ -73,7 +73,7 @@
 
         .flex-container {
             display: flex;
-            justify-content: center;
+            justify-content: space-evenly;
 
         }
 
@@ -82,17 +82,22 @@
             column-gap: 150px;
         }
 
-        .heading1 {
-            display: flex;
-
-
-            /* justify-content: flex-start; */
+        /* Headings */
+        .heading-card1 {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 40%;
         }
 
-        .heading2 {
-            display: flex;
+        .heading-card2 {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+            transition: 0.3s;
+            width: 40%;
+        }
 
-            /* justify-content: flex-end; */
+        /* Add some padding inside the card container */
+        .container {
+            padding: 2px 16px;
         }
 
         /* Button */
@@ -168,21 +173,22 @@
         </div>
     </div>
     <div class=" flex-container">
-        <div class="heading1">
-            <div style="padding-left:20px">
-                <h1>Training</h1>
+        <div class="heading-card1">
+            <div class="container">
+                <h1>Heading 1</h1>
                 <p>describe this page</p>
                 <p>Some content..</p>
             </div>
-
-            <div class="heading2">
-                <div style="padding-right:20px">
-                    <h1>Training</h1>
-                    <p>describe this page</p>
-                    <p>Some content..</p>
-                </div>
+        </div>
+        <div class="heading-card2">
+            <div class="container">
+                <h1>Heading 2</h1>
+                <p>describe this page</p>
+                <p>Some content..</p>
             </div>
         </div>
+    </div>
+    </div>
     </div>
 </body>
 
